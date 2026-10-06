@@ -1,0 +1,646 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2907
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+  <meta charset="UTF-8">\
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+  <title>Heather Morton | Artist & Art Teacher</title>\
+  <link rel="preconnect" href="https://fonts.googleapis.com">\
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Quicksand:wght@500;600;700&family=Shrikhand&display=swap" rel="stylesheet">\
+  <style>\
+    :root \{\
+      --bg-gradient: linear-gradient(135deg, #A8E6CF 0%, #DCEDC1 30%, #FFD3B6 70%, #FFAAA5 100%);\
+      --card-bg: rgba(255, 255, 255, 0.88);\
+      --teal-accent: #00A896;\
+      --teal-dark: #028090;\
+      --pink-soft: #FF85A1;\
+      --yellow-cream: #FFEAA7;\
+      --purple-soft: #A29BFE;\
+      --text-main: #2D3436;\
+      --font-title: 'Shrikhand', cursive;\
+      --font-heading: 'Fredoka', sans-serif;\
+      --font-body: 'Quicksand', sans-serif;\
+    \}\
+\
+    * \{\
+      box-sizing: border-box;\
+      margin: 0;\
+      padding: 0;\
+    \}\
+\
+    body \{\
+      background: linear-gradient(180deg, #bbf2f6 0%, #e3ffd8 35%, #ffdbe6 70%, #d4e8ff 100%);\
+      color: var(--text-main);\
+      font-family: var(--font-body);\
+      line-height: 1.6;\
+      overflow-x: hidden;\
+    \}\
+\
+    /* Sparkle Doodles */\
+    .sparkle \{\
+      position: absolute;\
+      color: var(--teal-accent);\
+      font-size: 1.5rem;\
+      user-select: none;\
+      animation: float 3s ease-in-out infinite alternate;\
+    \}\
+\
+    @keyframes float \{\
+      0% \{ transform: translateY(0px) rotate(0deg); \}\
+      100% \{ transform: translateY(-10px) rotate(15deg); \}\
+    \}\
+\
+    /* Header Navigation */\
+    header \{\
+      position: sticky;\
+      top: 0;\
+      background: rgba(255, 255, 255, 0.75);\
+      backdrop-filter: blur(10px);\
+      z-index: 1000;\
+      border-bottom: 3px solid #fff;\
+    \}\
+\
+    .nav-container \{\
+      max-width: 1200px;\
+      margin: 0 auto;\
+      display: flex;\
+      justify-content: space-between;\
+      align-items: center;\
+      padding: 1rem 2rem;\
+    \}\
+\
+    .logo \{\
+      font-family: var(--font-title);\
+      font-size: 1.8rem;\
+      color: var(--teal-dark);\
+      text-shadow: 2px 2px 0px var(--yellow-cream);\
+      text-decoration: none;\
+    \}\
+\
+    nav ul \{\
+      display: flex;\
+      list-style: none;\
+      gap: 1.5rem;\
+    \}\
+\
+    nav a \{\
+      color: var(--text-main);\
+      text-decoration: none;\
+      font-family: var(--font-heading);\
+      font-weight: 600;\
+      font-size: 1.05rem;\
+      padding: 0.4rem 1rem;\
+      border-radius: 20px;\
+      transition: all 0.3s ease;\
+    \}\
+\
+    nav a:hover \{\
+      background: var(--yellow-cream);\
+      color: var(--teal-dark);\
+    \}\
+\
+    /* Hero Section */\
+    .hero \{\
+      padding: 5rem 2rem 3rem;\
+      text-align: center;\
+      position: relative;\
+    \}\
+\
+    .hero-container \{\
+      max-width: 900px;\
+      margin: 0 auto;\
+      display: flex;\
+      flex-direction: column;\
+      align-items: center;\
+    \}\
+\
+    .hero-photo-wrapper \{\
+      position: relative;\
+      width: 260px;\
+      height: 260px;\
+      margin-bottom: 2rem;\
+    \}\
+\
+    /* Blob Shape Frame matching card */\
+    .blob-frame \{\
+      width: 100%;\
+      height: 100%;\
+      background: var(--teal-accent);\
+      border-radius: 60% 40% 50% 50% / 50% 60% 40% 50%;\
+      display: flex;\
+      align-items: center;\
+      justify-content: center;\
+      padding: 10px;\
+      box-shadow: 0 10px 25px rgba(0, 168, 150, 0.3);\
+      animation: morph 8s ease-in-out infinite alternate;\
+    \}\
+\
+    .blob-frame img \{\
+      width: 100%;\
+      height: 100%;\
+      object-fit: cover;\
+      border-radius: 50% 50% 40% 60% / 60% 40% 60% 40%;\
+    \}\
+\
+    @keyframes morph \{\
+      0% \{ border-radius: 60% 40% 50% 50% / 50% 60% 40% 50%; \}\
+      50% \{ border-radius: 40% 60% 50% 50% / 60% 40% 60% 40%; \}\
+      100% \{ border-radius: 50% 50% 60% 40% / 40% 50% 50% 60%; \}\
+    \}\
+\
+    .hero h1 \{\
+      font-family: var(--font-title);\
+      font-size: 3.8rem;\
+      color: #FFB7C5;\
+      -webkit-text-stroke: 2px #008080;\
+      text-shadow: 3px 3px 0px #fff, 5px 5px 0px var(--teal-accent);\
+      margin-bottom: 0.2rem;\
+      letter-spacing: 1px;\
+    \}\
+\
+    .hero-subtitle \{\
+      font-family: var(--font-heading);\
+      font-size: 2.2rem;\
+      color: #FFB7C5;\
+      -webkit-text-stroke: 1px #008080;\
+      margin-bottom: 1rem;\
+    \}\
+\
+    .hero-tagline \{\
+      font-family: var(--font-title);\
+      font-size: 4.5rem;\
+      color: #ffffff;\
+      -webkit-text-stroke: 2.5px #FF69B4;\
+      text-shadow: 3px 3px 0px #FFB6C1;\
+      margin-bottom: 1.5rem;\
+    \}\
+\
+    .hero p \{\
+      font-size: 1.2rem;\
+      max-width: 650px;\
+      margin: 0 auto 2rem;\
+      font-weight: 600;\
+      color: #333;\
+    \}\
+\
+    /* Section Styling */\
+    section \{\
+      padding: 4rem 2rem;\
+      max-width: 1200px;\
+      margin: 0 auto;\
+    \}\
+\
+    .section-title \{\
+      font-family: var(--font-title);\
+      font-size: 2.8rem;\
+      text-align: center;\
+      color: var(--teal-dark);\
+      margin-bottom: 0.5rem;\
+      text-shadow: 2px 2px 0px #fff;\
+    \}\
+\
+    .section-subtitle \{\
+      text-align: center;\
+      font-family: var(--font-heading);\
+      font-size: 1.2rem;\
+      color: #555;\
+      margin-bottom: 3rem;\
+    \}\
+\
+    /* Bio Section */\
+    .bio-box \{\
+      background: var(--card-bg);\
+      border-radius: 30px;\
+      padding: 3rem;\
+      border: 4px solid #fff;\
+      box-shadow: 0 15px 30px rgba(0,0,0,0.05);\
+      display: grid;\
+      grid-template-columns: 1fr 2fr;\
+      gap: 2.5rem;\
+      align-items: center;\
+    \}\
+\
+    .bio-badge \{\
+      background: var(--yellow-cream);\
+      border: 3px dashed var(--teal-accent);\
+      border-radius: 20px;\
+      padding: 2rem;\
+      text-align: center;\
+    \}\
+\
+    .bio-badge h3 \{\
+      font-family: var(--font-heading);\
+      font-size: 2.5rem;\
+      color: var(--teal-dark);\
+    \}\
+\
+    .bio-badge p \{\
+      font-weight: 700;\
+      color: var(--text-main);\
+    \}\
+\
+    .bio-text p \{\
+      font-size: 1.1rem;\
+      margin-bottom: 1rem;\
+      font-weight: 600;\
+    \}\
+\
+    /* Product Grid & Cards */\
+    .grid \{\
+      display: grid;\
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\
+      gap: 2rem;\
+    \}\
+\
+    .card \{\
+      background: var(--card-bg);\
+      border-radius: 25px;\
+      border: 4px solid #fff;\
+      padding: 1.8rem;\
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);\
+      transition: transform 0.3s ease, box-shadow 0.3s ease;\
+      display: flex;\
+      flex-direction: column;\
+      position: relative;\
+    \}\
+\
+    .card:hover \{\
+      transform: translateY(-8px);\
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);\
+    \}\
+\
+    .card-tag \{\
+      align-self: flex-start;\
+      background: var(--pink-soft);\
+      color: white;\
+      font-family: var(--font-heading);\
+      font-weight: 700;\
+      padding: 0.2rem 0.8rem;\
+      border-radius: 12px;\
+      font-size: 0.85rem;\
+      margin-bottom: 1rem;\
+    \}\
+\
+    .card-title \{\
+      font-family: var(--font-heading);\
+      font-size: 1.4rem;\
+      color: var(--teal-dark);\
+      margin-bottom: 0.5rem;\
+    \}\
+\
+    .card-price \{\
+      font-family: var(--font-title);\
+      font-size: 1.5rem;\
+      color: var(--pink-soft);\
+      margin-bottom: 0.8rem;\
+    \}\
+\
+    .card-desc \{\
+      font-size: 0.95rem;\
+      color: #555;\
+      margin-bottom: 1.5rem;\
+      flex-grow: 1;\
+      font-weight: 600;\
+    \}\
+\
+    .btn \{\
+      display: inline-block;\
+      width: 100%;\
+      text-align: center;\
+      background: var(--teal-accent);\
+      color: white;\
+      font-family: var(--font-heading);\
+      font-weight: 700;\
+      font-size: 1.05rem;\
+      padding: 0.8rem;\
+      border-radius: 15px;\
+      border: none;\
+      cursor: pointer;\
+      box-shadow: 0 4px 0px var(--teal-dark);\
+      transition: all 0.2s ease;\
+      text-decoration: none;\
+    \}\
+\
+    .btn:hover \{\
+      background: var(--teal-dark);\
+      box-shadow: 0 2px 0px #014d57;\
+      transform: translateY(2px);\
+    \}\
+\
+    /* Skull & Art Accents */\
+    .art-preview-box \{\
+      width: 100%;\
+      height: 180px;\
+      background: #e8f7f5;\
+      border-radius: 15px;\
+      display: flex;\
+      align-items: center;\
+      justify-content: center;\
+      margin-bottom: 1rem;\
+      border: 2px dashed var(--teal-accent);\
+      color: var(--teal-dark);\
+      font-family: var(--font-heading);\
+      font-weight: 700;\
+    \}\
+\
+    /* Cart & Contact Footer */\
+    .cart-btn \{\
+      position: fixed;\
+      bottom: 2rem;\
+      right: 2rem;\
+      background: var(--pink-soft);\
+      color: white;\
+      font-family: var(--font-heading);\
+      font-weight: 700;\
+      padding: 0.8rem 1.5rem;\
+      border-radius: 30px;\
+      box-shadow: 0 8px 20px rgba(255, 133, 161, 0.4);\
+      cursor: pointer;\
+      z-index: 1001;\
+      display: flex;\
+      align-items: center;\
+      gap: 0.5rem;\
+      border: 3px solid #fff;\
+    \}\
+\
+    footer \{\
+      background: rgba(255, 255, 255, 0.9);\
+      border-top: 4px solid #fff;\
+      padding: 3rem 2rem;\
+      text-align: center;\
+      margin-top: 4rem;\
+    \}\
+\
+    .contact-info \{\
+      display: flex;\
+      justify-content: center;\
+      gap: 2rem;\
+      flex-wrap: wrap;\
+      margin: 1.5rem 0;\
+      font-family: var(--font-heading);\
+      font-weight: 600;\
+      font-size: 1.1rem;\
+    \}\
+\
+    .contact-item \{\
+      display: flex;\
+      align-items: center;\
+      gap: 0.5rem;\
+      color: var(--teal-dark);\
+    \}\
+\
+    /* Cart Modal */\
+    .modal \{\
+      display: none;\
+      position: fixed;\
+      top: 0;\
+      left: 0;\
+      width: 100%;\
+      height: 100%;\
+      background: rgba(0,0,0,0.5);\
+      z-index: 2000;\
+      justify-content: center;\
+      align-items: center;\
+    \}\
+\
+    .modal-content \{\
+      background: white;\
+      padding: 2.5rem;\
+      border-radius: 25px;\
+      max-width: 450px;\
+      width: 90%;\
+      border: 4px solid var(--yellow-cream);\
+    \}\
+\
+    .close-btn \{\
+      float: right;\
+      font-size: 1.8rem;\
+      cursor: pointer;\
+      border: none;\
+      background: none;\
+    \}\
+\
+    @media (max-width: 768px) \{\
+      .hero h1 \{ font-size: 2.8rem; \}\
+      .hero-tagline \{ font-size: 3.2rem; \}\
+      .bio-box \{ grid-template-columns: 1fr; \}\
+      nav ul \{ display: none; \}\
+    \}\
+  </style>\
+</head>\
+<body>\
+\
+  <!-- Floating Sparkle Accents -->\
+  <div class="sparkle" style="top: 15%; left: 8%;">\uc0\u10022 </div>\
+  <div class="sparkle" style="top: 25%; right: 10%;">\uc0\u10022 </div>\
+  <div class="sparkle" style="top: 65%; left: 5%;">\uc0\u10022 </div>\
+\
+  <!-- Header Nav -->\
+  <header>\
+    <div class="nav-container">\
+      <a href="#" class="logo">Heather Morton</a>\
+      <nav>\
+        <ul>\
+          <li><a href="#about">About</a></li>\
+          <li><a href="#resources">Teaching Materials</a></li>\
+          <li><a href="#artwork">Artwork Gallery</a></li>\
+          <li><a href="#contact">Contact</a></li>\
+        </ul>\
+      </nav>\
+    </div>\
+  </header>\
+\
+  <!-- Hero Section -->\
+  <section class="hero">\
+    <div class="hero-container">\
+      <div class="hero-photo-wrapper">\
+        <div class="blob-frame">\
+          <!-- Attached photo loaded here -->\
+          <img src="Business Card Front.jpg" alt="Heather Morton">\
+        </div>\
+      </div>\
+      <h1>Heather Morton</h1>\
+      <div class="hero-subtitle">Artist & Art Teacher</div>\
+      <div class="hero-tagline">creating MAGIC</div>\
+      <p>Welcome to my creative classroom hub! Explore 20+ years of passion-driven art instruction materials, educational guides, and commissioned artwork.</p>\
+      <div style="display: flex; gap: 1rem;">\
+        <a href="#resources" class="btn">Shop Teaching Resources</a>\
+        <a href="#artwork" class="btn" style="background: var(--pink-soft); box-shadow: 0 4px 0px #d64a6b;">Explore Artwork</a>\
+      </div>\
+    </div>\
+  </section>\
+\
+  <!-- Bio Section -->\
+  <section id="about">\
+    <h2 class="section-title">About Heather</h2>\
+    <div class="section-subtitle">Bringing creativity & magic into art education</div>\
+    \
+    <div class="bio-box">\
+      <div class="bio-badge">\
+        <h3>20+</h3>\
+        <p>Years of Art Instruction & Commissioned Art</p>\
+      </div>\
+      <div class="bio-text">\
+        <p>Hi there! I'm Heather Morton, an artist and dedicated art educator with over two decades of experience guiding students to unleash their inner creativity.</p>\
+        <p>Throughout my teaching journey, I have developed a wide array of hands-on art curricula, project guides, and interactive classroom tools designed to make learning art approachable, exciting, and truly magical.</p>\
+        <p>Whether you are an educator looking for ready-to-use classroom materials or an art lover seeking original commissioned artwork, you've come to the right place!</p>\
+      </div>\
+    </div>\
+  </section>\
+\
+  <!-- Teaching Materials Section -->\
+  <section id="resources">\
+    <h2 class="section-title">Teaching Materials</h2>\
+    <div class="section-subtitle">Classroom-tested curricula, project guides, and activity sheets</div>\
+\
+    <div class="grid">\
+      <!-- Item 1 -->\
+      <div class="card">\
+        <span class="card-tag">Full Unit Guide</span>\
+        <h3 class="card-title">Comprehensive Art Curriculum Pack</h3>\
+        <div class="card-price">$28.00</div>\
+        <p class="card-desc">Step-by-step lesson plans, rubric printables, and guided visual activities suitable for middle & high school art classes.</p>\
+        <button class="btn" onclick="addToCart('Comprehensive Art Curriculum Pack', 28.00)">Add to Cart</button>\
+      </div>\
+\
+      <!-- Item 2 -->\
+      <div class="card">\
+        <span class="card-tag">Workshop Kit</span>\
+        <h3 class="card-title">Color Theory & Mixing Bundle</h3>\
+        <div class="card-price">$16.50</div>\
+        <p class="card-desc">Interactive worksheets, color wheel templates, and hands-on mixing projects for beginner and intermediate artists.</p>\
+        <button class="btn" onclick="addToCart('Color Theory & Mixing Bundle', 16.50)">Add to Cart</button>\
+      </div>\
+\
+      <!-- Item 3 -->\
+      <div class="card">\
+        <span class="card-tag">Classroom Poster Set</span>\
+        <h3 class="card-title">Elements of Art Printable Posters</h3>\
+        <div class="card-price">$12.00</div>\
+        <p class="card-desc">High-resolution printable posters featuring line, shape, texture, value, color, and space with vibrant visual guides.</p>\
+        <button class="btn" onclick="addToCart('Elements of Art Printable Posters', 12.00)">Add to Cart</button>\
+      </div>\
+    </div>\
+  </section>\
+\
+  <!-- Artwork Section -->\
+  <section id="artwork">\
+    <h2 class="section-title">Artwork & Prints</h2>\
+    <div class="section-subtitle">Original illustrations, skull series prints, and custom commissions</div>\
+\
+    <div class="grid">\
+      <!-- Art 1 -->\
+      <div class="card">\
+        <div class="art-preview-box">\uc0\u55356 \u57256  [ Original Print ]</div>\
+        <h3 class="card-title">Creative Mind Skull Print</h3>\
+        <div class="card-price">$35.00</div>\
+        <p class="card-desc">Archival quality art print featuring the iconic creative skull illustration with art supplies and starry details.</p>\
+        <button class="btn" onclick="addToCart('Creative Mind Skull Print', 35.00)">Purchase Print</button>\
+      </div>\
+\
+      <!-- Art 2 -->\
+      <div class="card">\
+        <div class="art-preview-box">\uc0\u10024  [ Custom Work ]</div>\
+        <h3 class="card-title">Custom Art Commission Deposit</h3>\
+        <div class="card-price">$75.00</div>\
+        <p class="card-desc">Reserve a spot for a personalized commissioned piece, custom canvas painting, or portrait.</p>\
+        <button class="btn" onclick="addToCart('Custom Art Commission Deposit', 75.00)">Reserve Spot</button>\
+      </div>\
+    </div>\
+  </section>\
+\
+  <!-- Footer & Contact -->\
+  <footer id="contact">\
+    <h2 class="section-title" style="font-size: 2.2rem;">Let's Connect!</h2>\
+    <p style="font-weight: 600; color: #555;">Have questions about curriculum guides or custom art?</p>\
+    \
+    <div class="contact-info">\
+      <div class="contact-item">\uc0\u55357 \u56542  <span>559.696.6667</span></div>\
+      <div class="contact-item">\uc0\u9993 \u65039  <span>MrsMortonsArtAdventures@gmail.com</span></div>\
+      <div class="contact-item">\uc0\u55357 \u56561  <span>@hjskills (TikTok & Instagram)</span></div>\
+    </div>\
+\
+    <p style="margin-top: 2rem; font-size: 0.9rem; color: #888;">\'a9 2026 Heather Morton \'95 All Rights Reserved</p>\
+  </footer>\
+\
+  <!-- Floating Cart Button -->\
+  <div class="cart-btn" onclick="toggleCart()">\
+    \uc0\u55357 \u57042  Cart (<span id="cart-count">0</span>)\
+  </div>\
+\
+  <!-- Cart Modal -->\
+  <div class="modal" id="cart-modal">\
+    <div class="modal-content">\
+      <button class="close-btn" onclick="toggleCart()">&times;</button>\
+      <h3 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--teal-dark); margin-bottom: 1rem;">Your Cart</h3>\
+      <div id="cart-items">\
+        <p style="color: #666;">Your cart is currently empty.</p>\
+      </div>\
+      <div style="margin-top: 1.5rem; text-align: right; font-weight: 700; font-size: 1.2rem;">\
+        Total: $<span id="cart-total">0.00</span>\
+      </div>\
+      <button class="btn" style="margin-top: 1.5rem; background: var(--pink-soft); box-shadow: 0 4px 0px #d64a6b;" onclick="checkout()">Proceed to Checkout</button>\
+    </div>\
+  </div>\
+\
+  <script>\
+    let cart = [];\
+\
+    function addToCart(title, price) \{\
+      cart.push(\{ title, price \});\
+      updateCart();\
+      alert(`Added "$\{title\}" to your cart!`);\
+    \}\
+\
+    function updateCart() \{\
+      document.getElementById('cart-count').innerText = cart.length;\
+      const container = document.getElementById('cart-items');\
+      \
+      if (cart.length === 0) \{\
+        container.innerHTML = '<p style="color: #666;">Your cart is currently empty.</p>';\
+        document.getElementById('cart-total').innerText = '0.00';\
+        return;\
+      \}\
+\
+      let html = '';\
+      let total = 0;\
+      cart.forEach((item) => \{\
+        total += item.price;\
+        html += `\
+          <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid #eee;">\
+            <span>$\{item.title\}</span>\
+            <strong>$$\{item.price.toFixed(2)\}</strong>\
+          </div>\
+        `;\
+      \});\
+      container.innerHTML = html;\
+      document.getElementById('cart-total').innerText = total.toFixed(2);\
+    \}\
+\
+    function toggleCart() \{\
+      const modal = document.getElementById('cart-modal');\
+      modal.style.display = modal.style.display === 'flex' ? 'none' : 'flex';\
+    \}\
+\
+    function checkout() \{\
+      if (cart.length === 0) \{\
+        alert("Your cart is empty!");\
+        return;\
+      \}\
+      alert("Redirecting to secure checkout payment portal...");\
+      cart = [];\
+      updateCart();\
+      toggleCart();\
+    \}\
+  </script>\
+</body>\
+</html>}
